@@ -1,4 +1,4 @@
-# Data Science Laboratory 2 (ELTE) — Public Repository
+# Data Science Laboratory 2
 
 This repository hosts materials and code for the Data Science Laboratory 2 subject at the ELTE Data Science Department. It contains exploratory data analysis (EDA) assets, a dataset of courses, and an embedding generation workflow to support downstream tasks like ontology generation and knowledge graph creation.
 
