@@ -1,4 +1,4 @@
-# eda — Exploratory Data Analysis
+# Exploratory Data Analysis
 
 This folder contains exploratory data analysis (EDA) notebooks and scripts for the project. Its purpose is to inspect, clean, visualize, and summarize the dataset(s) used in this repository and to produce figures, tables, and intermediate artifacts that inform modeling and reporting decisions.
 
