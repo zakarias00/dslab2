@@ -107,8 +107,6 @@ Outputs:
 - `embeddings/eda_embeddings_embeddings.npy` — Float32 NumPy array shaped `[N, 384]`
 - `embeddings/eda_embeddings_metadata.csv` — CSV mapping rows/cells to texts and indices
 
-## Reproducibility tips
-
 ## Troubleshooting
 
 - Memory usage: Reduce `--batch-size` if you face memory constraints.
