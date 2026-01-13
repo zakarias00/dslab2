@@ -113,3 +113,48 @@ Outputs:
 - Long texts: Consider trimming inputs to a reasonable maximum to improve throughput.
 - Column selection: Ensure the `--columns` argument matches CSV headers; otherwise rely on auto-detection.
 - Unicode/CSV parsing: Load with an explicit encoding if necessary, e.g., `encoding="utf-8"`.
+
+
+## References
+
+[1] Garima Agrawal, Yuli Deng, Jongchan Park, Huan Liu, and Ying Chih Chen.  
+**Building knowledge graphs from unstructured texts: Applications and impact analyses in cybersecurity education.**  
+*Information (Switzerland)*, 13, November 2022.
+
+[2] Stephan Bloehdorn, Philipp Cimiano, Andreas Hotho, and Steffen Staab.  
+**An ontology-based framework for text mining.**  
+*Journal for Language Technology and Computational Linguistics*, 20:87–112, July 2005.
+
+[3] Jens Dorpinghaus and Marc Jacobs.  
+**Knowledge detection and discovery using semantic graph embeddings on large knowledge graphs generated on text mining results.**  
+In *Proceedings of the 2020 Federated Conference on Computer Science and Information Systems (FedCSIS 2020)*, pages 169–178. IEEE, September 2020.
+
+[4] Francois Goupil, Pavel Laskov, Irdin Pekaric, Michael Felderer, Alexander Dürr, and Frederic Thiesse.  
+**Towards understanding the skill gap in cybersecurity.**  
+In *Proceedings of the Annual Conference on Innovation and Technology in Computer Science Education (ITiCSE)*, Volume 1, pages 477–483. ACM, July 2022.
+
+[5] Luciano Ignaczak, Guilherme Goldschmidt, Cristiano André da Costa, and Rodrigo da Rosa Righi.  
+**Text mining in cybersecurity: A systematic literature review.**  
+September 2022.
+
+[6] Zhixin Meng, Shaoxiong Zhan, Ruiqing Xu, Wolfgang Mayer, Ye Zhu, Hong-Yu Zhang, Chuan He, Keqing He, Debo Cheng, and Zaiwen Feng.  
+**Domain ontology-driven knowledge graph generation from text.**  
+*ACM Transactions on Probabilistic Machine Learning*, December 2024.
+
+[7] Diane Murphy, Nektaria Tryfona, and Andrew M. Marshall.  
+**A targeted study on the match between cybersecurity higher education offerings and workforce needs.**  
+*Virginia Journal of Science*, 74, 2023.
+
+[8] Christopher A. Ramezan.  
+**Examining the cyber skills gap: An analysis of cybersecurity positions by sub-field.**  
+*Journal of Information Systems Education*, 34:94–105, 2023.
+
+[9] Israa Ezzat Salem, Maad M. Mijwil, Alaa Wagih Abdulqader, Marwa M. Ismaeel, Anmar Alkhazraji, and Anas M. Zein Alaabdin.  
+**Introduction to the data mining techniques in cybersecurity.**  
+December 2022.
+
+[10] Valdemar Švábenský, Jan Vykopal, Pavel Čeleda, and Lydia Kraus.  
+**Applications of educational data mining and learning analytics on data from cybersecurity training.**  
+*Education and Information Technologies*, 27:12179–12212, November 2022.
+
+
