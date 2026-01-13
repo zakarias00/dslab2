@@ -43,7 +43,7 @@ with open('embeddings/my_embeddings.pkl', 'rb') as f:
 
 If you need to regenerate embeddings, prefer using a reproducible script (for example `scripts/generate_embeddings.py` if present). When you run generation, record the following metadata alongside the vectors:
 
-- model name and version (e.g., `sentence-transformers/all-MiniLM-L6-v2`, or `text-embedding-3-small`)
+- model name and version (e.g., `sentence-transformers/all-MiniLM-L6-v2`)
 - dimensionality of the embedding vectors
 - preprocessing steps (tokenization, lowercasing, stopword removal, etc.)
 - random seed (if applicable)
@@ -61,7 +61,7 @@ embeddings = model.encode(texts, show_progress_bar=True)
 np.save('embeddings/my_embeddings.npy', embeddings)
 ```
 
-Example using OpenAI embeddings (pseudocode — ensure you have the right client and API key):
+Example using OpenAI embeddings:
 
 ```python
 from openai import OpenAI
@@ -72,22 +72,6 @@ res = client.embeddings.create(model='text-embedding-3-small', input=texts)
 vectors = [r.embedding for r in res.data]
 # Save vectors and metadata
 ```
-
-## Indexing & similarity search
-
-Common next step after generating embeddings is building an index (FAISS, Annoy, hnswlib). Example: create a simple FAISS index from a NumPy array:
-
-```python
-import faiss
-import numpy as np
-
-emb = np.load('embeddings/my_embeddings.npy').astype('float32')
-index = faiss.IndexFlatL2(emb.shape[1])
-index.add(emb)
-faiss.write_index(index, 'embeddings/my_index.faiss')
-```
-
-Adjust index type for disk-backed or approximate search depending on dataset size.
 
 ## Naming conventions
 
@@ -107,11 +91,3 @@ Always store the model identifier, commit hash, and generation parameters near t
   "notes": "generated from cleaned dataset X with lowercasing"
 }
 ```
-
-## Size & storage
-
-Embeddings can be large. Keep an eye on storage and compress or shard embeddings for very large datasets. Use memory-mapped NumPy (`np.load(..., mmap_mode='r')`) if you need to read large arrays without loading into RAM.
-
-## Contact / Questions
-
-If you aren't sure which embedding files are authoritative or how they were generated, check the project README or ask the repository owner/maintainers. For this repo, contact the author at the repo or open an issue referencing the embeddings folder.
